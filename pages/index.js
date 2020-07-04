@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { auth } from 'firebase';
 import { useAuth } from '../lib/auth';
 
 const Home = () => {
