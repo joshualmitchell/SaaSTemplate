@@ -1,6 +1,7 @@
-import { useAuth } from '../lib/auth';
 import { Button, Text, Heading, Code } from '@chakra-ui/core';
 import Head from 'next/head';
+
+import { useAuth } from '@/lib/auth';
 
 const Home = () => {
     const auth = useAuth();
