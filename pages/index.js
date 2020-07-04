@@ -12,13 +12,16 @@ const Home = () => {
             <main>
                 <Heading>Simple Messaging App!</Heading>
                 <Text>
-                    Current user: <Code>{auth?.user?.email}</Code>
+                    Current user:{' '}
+                    <Code>{auth.user ? auth.user.email : 'None'}</Code>
                 </Text>
-                <Button onClick={(e) => auth.signInWithGoogle()}>
-                    Sign In
-                </Button>
-                {auth?.user && (
+
+                {auth.user ? (
                     <Button onClick={(e) => auth.signOut()}>Sign Out</Button>
+                ) : (
+                    <Button onClick={(e) => auth.signInWithGoogle()}>
+                        Sign In
+                    </Button>
                 )}
             </main>
         </div>
