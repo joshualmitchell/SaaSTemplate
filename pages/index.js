@@ -1,4 +1,4 @@
-import { Button, Text, Heading, Code } from '@chakra-ui/core';
+import { Button, Text, Heading, Code, Icon } from '@chakra-ui/core';
 import Head from 'next/head';
 
 import { useAuth } from '@/lib/auth';
@@ -11,6 +11,7 @@ const Home = () => {
                 <title>Simple Messaging App</title>
             </Head>
             <main>
+                <Icon name="logo" />
                 <Heading>Simple Messaging App!</Heading>
                 <Text>
                     Current user:{' '}
